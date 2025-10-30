@@ -77,8 +77,8 @@ class WebhookService:
         
         # 3. Process webhook
         try:
-            # Temporariamente desabilitado para debug
-            # await self._process_payment_update(payload)
+            # Process payment update
+            await self._process_payment_update(payload)
             
             # Mark as processed
             now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")

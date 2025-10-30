@@ -1,0 +1,46 @@
+{
+  "data_execucao": "2025-10-30T11:22:46.250220",
+  "total_testes": 5,
+  "aprovados": 3,
+  "recusados": 2,
+  "erros": 0,
+  "taxa_sucesso": "60.0%",
+  "resultados": [
+    {
+      "bandeira": "Visa",
+      "status": "APROVADO",
+      "payment_id": "020065677710301422190009346432420000000000",
+      "authorization_code": "632667",
+      "transaction_status": "CAPTURED",
+      "invoice_id": "5238ed27-29d0-43ad-8694-054eeb967381"
+    },
+    {
+      "bandeira": "Mastercard",
+      "status": "RECUSADO",
+      "erro": "{\"detail\":\"Payment failed: [{\\\"tag\\\":\\\"cardInfo\\\",\\\"description\\\":\\\"O cartão está vencido.\\\"}]\"}",
+      "invoice_id": "7e5ee296-384e-431b-9f4e-98f4c513cb52"
+    },
+    {
+      "bandeira": "Amex",
+      "status": "APROVADO",
+      "payment_id": "020013337910301422310009211563130000000000",
+      "authorization_code": "030960",
+      "transaction_status": "CAPTURED",
+      "invoice_id": "44cb9e41-eb5f-4d04-93e8-cf188c367730"
+    },
+    {
+      "bandeira": "Hipercard",
+      "status": "RECUSADO",
+      "erro": "{\"detail\":\"Payment failed: [{\\\"tag\\\":\\\"cardInfo\\\",\\\"description\\\":\\\"O cartão está vencido.\\\"}]\"}",
+      "invoice_id": "7d0d1348-e4e4-4cde-a184-bf4627fe7ae6"
+    },
+    {
+      "bandeira": "Elo",
+      "status": "APROVADO",
+      "payment_id": "020054516610301422420008381206900000000000",
+      "authorization_code": "012158",
+      "transaction_status": "CAPTURED",
+      "invoice_id": "1e4c1404-5b91-454b-a95a-3fe5db78ad10"
+    }
+  ]
+}

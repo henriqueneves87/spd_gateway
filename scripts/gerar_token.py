@@ -1,8 +1,8 @@
 import requests
 import base64
 
-CLIENT_ID = "de1f2f6a-9cee-4140-b61e-aa11edf84ab9"
-CLIENT_SECRET = "FC9E0F89-994E-4287-9570-D7B51AAE2F52"
+CLIENT_ID = "A40A208C-0914-479D-BA17-BBD6E9063991"
+CLIENT_SECRET = "D597E2B5-2BF2-48D1-A682-26C58F83D0EF"
 
 # 1. Obter token OAuth
 url_auth = "https://ecommerce-hml.adiq.io/auth/oauth2/v1/token"

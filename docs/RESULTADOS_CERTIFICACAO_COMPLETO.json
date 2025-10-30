@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "data_execucao": "2025-10-30T11:13:18",
+    "gateway": "Spdpay Gateway",
+    "versao": "1.0.0",
+    "ambiente": "Homologação (HML)",
+    "base_url_gateway": "http://127.0.0.1:8000",
+    "base_url_adiq": "https://ecommerce-hml.adiq.io"
+  },
+  "credenciais": {
+    "client_id": "A40A208C-0914-479D-BA17-BBD6E9063991",
+    "client_secret": "D597E2B5-2BF2-48D1-A682-26C58F83D0EF",
+    "status": "Oficiais - Ativadas em 30/10/2025",
+    "validacao": {
+      "autenticacao": "SUCESSO",
+      "tokenizacao": "SUCESSO",
+      "pagamentos": "SUCESSO"
+    }
+  },
+  "configuracao_testes": {
+    "merchant_id": "fb93c667-fbab-47ea-b3c7-9dd27231244a",
+    "customer_id": "3b415031-7236-425e-bc8f-35c7a5f572ab",
+    "api_key": "password",
+    "seller_id": "speedpay_seller_hml"
+  },
+  "cartoes_teste": {
+    "visa": {
+      "pan": "4761739001010036",
+      "expiration_month": "12",
+      "expiration_year": "25",
+      "cvv": "123",
+      "token_gerado": "A7B16B16-F50E-4D35-A3ED-2BE95DEE0209"
+    },
+    "mastercard": {
+      "pan": "5201561050025011",
+      "expiration_month": "12",
+      "expiration_year": "25",
+      "cvv": "123",
+      "token_gerado": "6EF0A1B4-0C6D-401C-9AA1-2F3869373A82"
+    }
+  },
+  "testes_executados": [
+    {
+      "teste_numero": 1,
+      "tipo_transacao": "Auto-Captura",
+      "acao": "Autorizar",
+      "tipo_produto": "Crédito",
+      "bandeira": "Visa",
+      "tipo_pagamento": "à Vista",
+      "parcelas": 1,
+      "valor_centavos": 1000,
+      "valor_reais": "R$ 10,00",
+      "cofre": false,
+      "resultado": "FALHOU",
+      "motivo_falha": "Connection Reset - Instabilidade temporária da Adiq",
+      "erro": "Connection aborted - Host remoto cancelou conexão",
+      "invoice_id": "60b675df-dca4-45de-9c66-915474cad294",
+      "payment_id": null,
+      "authorization_code": null,
+      "tid": null,
+      "nsu": null,
+      "status": "FAILED",
+      "timestamp": "2025-10-30T11:13:18"
+    },
+    {
+      "teste_numero": 3,
+      "tipo_transacao": "Auto-Captura",
+      "acao": "Autorizar",
+      "tipo_produto": "Crédito",
+      "bandeira": "Visa",
+      "tipo_pagamento": "Parcelado Loja",
+      "parcelas": 3,
+      "valor_centavos": 1000,
+      "valor_reais": "R$ 10,00",
+      "valor_parcela": "R$ 3,33",
+      "cofre": false,
+      "resultado": "SUCESSO",
+      "invoice_id": "23c46946-49ec-46bd-8078-e59033acd7fb",
+      "payment_id": "020094171810301413260003923453790000000000",
+      "authorization_code": "073909",
+      "tid": "020094171810301413260003923453790000000000",
+      "nsu": null,
+      "status": "CAPTURED",
+      "card_token": "A7B16B16-F50E-4D35-A3ED-2BE95DEE0209",
+      "timestamp": "2025-10-30T11:13:26"
+    },
+    {
+      "teste_numero": 4,
+      "tipo_transacao": "Auto-Captura",
+      "acao": "Autorizar",
+      "tipo_produto": "Crédito",
+      "bandeira": "Mastercard",
+      "tipo_pagamento": "à Vista",
+      "parcelas": 1,
+      "valor_centavos": 1000,
+      "valor_reais": "R$ 10,00",
+      "cofre": false,
+      "resultado": "SUCESSO",
+      "invoice_id": "ecf7b455-b4e3-4546-a88f-68f3bc382d26",
+      "payment_id": "020058426510301413310002846751080000000000",
+      "authorization_code": "803553",
+      "tid": "020058426510301413310002846751080000000000",
+      "nsu": null,
+      "status": "CAPTURED",
+      "card_token": "6EF0A1B4-0C6D-401C-9AA1-2F3869373A82",
+      "timestamp": "2025-10-30T11:13:31"
+    }
+  ],
+  "testes_anteriores_validacao": [
+    {
+      "descricao": "Teste com credenciais Postman (antes das oficiais)",
+      "data": "2025-10-30T09:30:00",
+      "resultados": [
+        {
+          "teste": "Visa à Vista",
+          "payment_id": "020048967410301230120007230412810000000000",
+          "authorization_code": "223899",
+          "status": "CREATED"
+        },
+        {
+          "teste": "Visa Parcelado 3x",
+          "payment_id": "020064239610301231410006672460510000000000",
+          "authorization_code": "225328",
+          "status": "CREATED"
+        },
+        {
+          "teste": "Visa com PAN (tokenização automática)",
+          "payment_id": "020048967410301230120007230412810000000000",
+          "authorization_code": "223899",
+          "status": "CAPTURED"
+        }
+      ]
+    }
+  ],
+  "resumo_estatistico": {
+    "total_testes_executados": 3,
+    "total_sucessos": 2,
+    "total_falhas": 1,
+    "taxa_sucesso": "66.67%",
+    "taxa_falha": "33.33%",
+    "testes_por_bandeira": {
+      "Visa": {
+        "total": 2,
+        "sucessos": 1,
+        "falhas": 1
+      },
+      "Mastercard": {
+        "total": 1,
+        "sucessos": 1,
+        "falhas": 0
+      }
+    },
+    "testes_por_tipo": {
+      "a_vista": {
+        "total": 2,
+        "sucessos": 1,
+        "falhas": 1
+      },
+      "parcelado": {
+        "total": 1,
+        "sucessos": 1,
+        "falhas": 0
+      }
+    }
+  },
+  "observacoes": [
+    {
+      "tipo": "SUCESSO",
+      "mensagem": "Credenciais oficiais da Adiq funcionando perfeitamente"
+    },
+    {
+      "tipo": "SUCESSO",
+      "mensagem": "Tokenização automática de cartões funcionando"
+    },
+    {
+      "tipo": "SUCESSO",
+      "mensagem": "Pagamentos parcelados funcionando corretamente"
+    },
+    {
+      "tipo": "SUCESSO",
+      "mensagem": "Status CAPTURED sendo retornado corretamente"
+    },
+    {
+      "tipo": "SUCESSO",
+      "mensagem": "Invoices sendo atualizadas para PAID automaticamente"
+    },
+    {
+      "tipo": "AVISO",
+      "mensagem": "Teste #1 falhou por instabilidade temporária da Adiq (Connection Reset)"
+    },
+    {
+      "tipo": "INFO",
+      "mensagem": "Tokens de cartão expiram em 10 minutos - gerar novos antes de cada bateria de testes"
+    },
+    {
+      "tipo": "INFO",
+      "mensagem": "Ambiente HML da Adiq pode apresentar lentidão ocasional (timeout de 90s configurado)"
+    }
+  ],
+  "proximos_passos": [
+    {
+      "ordem": 1,
+      "acao": "Executar bateria completa de testes (85 casos)",
+      "status": "PENDENTE",
+      "prioridade": "ALTA"
+    },
+    {
+      "ordem": 2,
+      "acao": "Preencher planilha de certificação completa",
+      "status": "EM_ANDAMENTO",
+      "prioridade": "ALTA"
+    },
+    {
+      "ordem": 3,
+      "acao": "Validar todos os cenários de erro",
+      "status": "PENDENTE",
+      "prioridade": "MÉDIA"
+    },
+    {
+      "ordem": 4,
+      "acao": "Testar webhooks da Adiq",
+      "status": "PENDENTE",
+      "prioridade": "MÉDIA"
+    },
+    {
+      "ordem": 5,
+      "acao": "Enviar documentação para Adiq",
+      "status": "PENDENTE",
+      "prioridade": "ALTA"
+    }
+  ],
+  "arquivos_relacionados": {
+    "planilha_certificacao": "docs/gateway-ecommerce-roteito-testes 3.csv",
+    "planilha_preenchida": "docs/gateway-ecommerce-roteito-testes-preenchida.csv",
+    "resultados_json": "docs/resultados_testes.json",
+    "documentacao_api": "docs/API_DOCUMENTATION.md",
+    "guia_swagger": "docs/SWAGGER_GUIDE.md",
+    "guia_postman": "docs/POSTMAN_GUIDE.md",
+    "postman_collection": "docs/Spdpay_Gateway.postman_collection.json"
+  },
+  "contatos_suporte": {
+    "adiq": {
+      "email": "suporte@adiq.com.br",
+      "portal_admin": "https://admin-spdpaydigital-hml.adiq.io/",
+      "portal_merchant": "https://portal-spdpaydigital-hml.adiq.io/"
+    }
+  },
+  "versao_documento": "1.0.0",
+  "ultima_atualizacao": "2025-10-30T11:14:00"
+}

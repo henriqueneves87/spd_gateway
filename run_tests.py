@@ -18,14 +18,14 @@ CUSTOMER_ID = "3b415031-7236-425e-bc8f-35c7a5f572ab"
 # IMPORTANTE: Rodar 'python scripts/gerar_token.py' antes de executar os testes!
 CARTOES = {
     "Visa": {
-        "card_token": "3624BA34-233B-4DE1-9E79-7E269582C5F2",
+        "card_token": "4D2745DC-A299-4A72-B374-8FDC3A11ECAB",
         "brand": "visa",
         "expiration_month": "12",
         "expiration_year": "25",
         "cvv": "123"
     },
     "Mastercard": {
-        "card_token": "D8563642-5D9C-4A18-8B0E-B75CD6EB3045",
+        "card_token": "72F2FD4E-45FA-43A6-BA95-8153DA5FE7D0",
         "brand": "mastercard",
         "expiration_month": "12",
         "expiration_year": "25",
