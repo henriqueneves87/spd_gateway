@@ -53,7 +53,7 @@ async def adiq_webhook(
             message="Webhook already processed"
         )
     except Exception as e:
-        logger.error("webhook_processing_failed", error=str(e))
+        logger.error(f"webhook_processing_failed: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Webhook processing failed: {str(e)}"
