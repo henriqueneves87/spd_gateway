@@ -56,7 +56,7 @@ class WebhookService:
         try:
             supabase.table("webhook_logs").insert(webhook_log).execute()
         except Exception as e:
-            logger.error("webhook_log_failed", error=str(e))
+            logger.error(f"webhook_log_failed: {str(e)}")
             # Continue processing even if log fails
         
         # 2. Check for duplicate
@@ -73,7 +73,7 @@ class WebhookService:
         except DuplicateWebhookError:
             raise
         except Exception as e:
-            logger.error("duplicate_check_failed", error=str(e))
+            logger.error(f"duplicate_check_failed: {str(e)}")
         
         # 3. Process webhook
         try:
