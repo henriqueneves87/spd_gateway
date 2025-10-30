@@ -1,0 +1,86 @@
+﻿#;Tipo de Transação;Ação;Tipo de Transação;Bandeira;Tipo de Produto;Parcelas;Valor ;Cofre;Nº Cofre;Nº Autorização;TID;Observação
+1;Auto-Captura;Autorizar;Crédito;Visa;à Vista;1;1000;não;;;;
+2;Auto-Captura;Autorizar;Crédito;Visa;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+3;Auto-Captura;Autorizar;Crédito;Visa;Parcelado Loja;>1;1000;não;;;;
+4;Auto-Captura;Autorizar;Crédito;Mastercard;à Vista;1;1000;não;;;;
+5;Auto-Captura;Autorizar;Crédito;Mastercard;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+6;Auto-Captura;Autorizar;Crédito;Mastercard;Parcelado Loja;>1;1000;não;;;;
+7;Auto-Captura;Autorizar;Crédito;Visa;à Vista;1;1000;sim;;;;
+8;Auto-Captura;Autorizar;Crédito;Visa;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+9;Auto-Captura;Autorizar;Crédito;Visa;Parcelado Loja;>1;1000;sim;;;;
+10;Auto-Captura;Autorizar;Crédito;Mastercard;à Vista;1;1000;sim;;;;
+11;Auto-Captura;Autorizar;Crédito;Mastercard;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+12;Auto-Captura;Autorizar;Crédito;Mastercard;Parcelado Loja;>1;1000;sim;;;;
+13;Auto-Captura;Autorizar/Cancelar;Crédito;Visa;à Vista;1;1000;não;;;;
+14;Auto-Captura;Autorizar/Cancelar;Crédito;Visa;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+15;Auto-Captura;Autorizar/Cancelar;Crédito;Visa;Parcelado Loja;>1;1000;não;;;;
+16;Auto-Captura;Autorizar/Cancelar;Crédito;Mastercard;à Vista;1;1000;não;;;;
+17;Auto-Captura;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+18;Auto-Captura;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Loja;>1;1000;não;;;;
+19;Auto-Captura;Autorizar/Cancelar;Crédito;Visa;à Vista;1;1000;sim;;;;
+20;Auto-Captura;Autorizar/Cancelar;Crédito;Visa;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+21;Auto-Captura;Autorizar/Cancelar;Crédito;Visa;Parcelado Loja;>1;1000;sim;;;;
+22;Auto-Captura;Autorizar/Cancelar;Crédito;Mastercard;à Vista;1;1000;sim;;;;
+23;Auto-Captura;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+24;Auto-Captura;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Loja;>1;1000;sim;;;;
+25;Pré-Autorização;Autorizar/Capturar;Crédito;Visa;à Vista;1;1000;não;;;;
+26;Pré-Autorização;Autorizar/Capturar;Crédito;Visa;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+27;Pré-Autorização;Autorizar/Capturar;Crédito;Visa;Parcelado Loja;>1;1000;não;;;;
+28;Pré-Autorização;Autorizar/Capturar;Crédito;Mastercard;à Vista;1;1000;não;;;;
+29;Pré-Autorização;Autorizar/Capturar;Crédito;Mastercard;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+30;Pré-Autorização;Autorizar/Capturar;Crédito;Mastercard;Parcelado Loja;>1;1000;não;;;;
+31;Pré-Autorização;Autorizar/Capturar;Crédito;Visa;à Vista;1;1000;sim;;;;
+32;Pré-Autorização;Autorizar/Capturar;Crédito;Visa;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+33;Pré-Autorização;Autorizar/Capturar;Crédito;Visa;Parcelado Loja;>1;1000;sim;;;;
+34;Pré-Autorização;Autorizar/Capturar;Crédito;Mastercard;à Vista;1;1000;sim;;;;
+35;Pré-Autorização;Autorizar/Capturar;Crédito;Mastercard;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+36;Pré-Autorização;Autorizar/Capturar;Crédito;Mastercard;Parcelado Loja;>1;1000;sim;;;;
+37;Pré-Autorização;Autorizar/Cancelar;Crédito;Visa;à Vista;1;1000;não;;;;
+38;Pré-Autorização;Autorizar/Cancelar;Crédito;Visa;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+39;Pré-Autorização;Autorizar/Cancelar;Crédito;Visa;Parcelado Loja;>1;1000;não;;;;
+40;Pré-Autorização;Autorizar/Cancelar;Crédito;Mastercard;à Vista;1;1000;não;;;;
+41;Pré-Autorização;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+42;Pré-Autorização;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Loja;>1;1000;não;;;;
+43;Pré-Autorização;Autorizar/Cancelar;Crédito;Visa;à Vista;1;1000;sim;;;;
+44;Pré-Autorização;Autorizar/Cancelar;Crédito;Visa;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+45;Pré-Autorização;Autorizar/Cancelar;Crédito;Visa;Parcelado Loja;>1;1000;sim;;;;
+46;Pré-Autorização;Autorizar/Cancelar;Crédito;Mastercard;à Vista;1;1000;sim;;;;
+47;Pré-Autorização;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+48;Pré-Autorização;Autorizar/Cancelar;Crédito;Mastercard;Parcelado Loja;>1;1000;sim;;;;
+49;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Visa;à Vista;1;1000;não;;;;
+50;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Visa;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+51;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Visa;Parcelado Loja;>1;1000;não;;;;
+52;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Mastercard;à Vista;1;1000;não;;;;
+53;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Mastercard;Parcelado Emissor;>1;1000;não;;;;Modalidade Indisponível 
+54;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Mastercard;Parcelado Loja;>1;1000;não;;;;
+55;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Visa;à Vista;1;1000;sim;;;;
+56;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Visa;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+57;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Visa;Parcelado Loja;>1;1000;sim;;;;
+58;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Mastercard;à Vista;1;1000;sim;;;;
+59;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Mastercard;Parcelado Emissor;>1;1000;sim;;;;Modalidade Indisponível 
+60;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Mastercard;Parcelado Loja;>1;1000;sim;;;;
+61;Efetuar Consulta após Autorizar;Autorizar;Crédito;Mastercard;à Vista;>1;1000;sim;;;;
+62;Efetuar Consulta após Cancelar;Autorizar/Cancelar;Crédito;Mastercard;à Vista;>1;1000;sim;;;;
+63;Simular transação - Retorno Consulta = Negada (Retorno : Erro 51);Autorizar;;;;;1051;;;;;
+64;Simular Time Out - Retorno de Consulta = Desfazimento (Retorno : Time Out);Autorizar;;;;;1001;;;;;
+65;Simular Time Out - Retorno Consulta = Processo de Desafazimento após 5 minutos (Retorno : Time Out);Autorizar;;;;;1002;;;;;
+66;Simular Time Out - Retorno Consulta = Captura Tardia não efetuada (Retorno : Time Out);Autorizar/Capturar;;;;;1003;;;;;
+67;Simular Time Out - Retorno Consulta = Capturada;Autorizar/Capturar;;;;;1004;;;;;
+68;Simular Falha Cancelamento - Erro 12 (Indisponibilidade Emissor);Cancelamento Autorizar/Capturar;;;;;1012;;;;;
+3DS Externo;Enviar os campos obrigatórios conforme especificação (Dados da autênticação externa) - https://developers.adiq.io/manual/threeds#-3ds-externo-7;;;;;;;;;;;
+69;Auto-Captura;Autorizar;Crédito;Mastercard;à Vista;1;3098;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 02 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0
+70;Pré-Autorização;Autorizar/Capturar;Crédito;Mastercard;à Vista;1;3098;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 01 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0
+71;Auto-Captura;Autorizar/Cancelar;Crédito;Mastercard;à Vista;1;3098;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 04 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0
+72;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Mastercard;à Vista;1;3098;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 05 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0 - Operação será negada
+73;Auto-Captura;Autorizar;Crédito;Visa;à Vista;1;188907;não;;;;Cavvucaf: AAkBBgEDQwAAAuHrmGF5dQAAAAA= / ECI: 05 / Program protocol: 2.2.0
+74;Pré-Autorização;Autorizar/Capturar;Crédito;Visa;à Vista;1;188907;não;;;;Cavvucaf: AAkBBgEDQwAAAuHrmGF5dQAAAAA= / ECI: 06 / Program protocol: 2.2.0
+75;Auto-Captura;Autorizar/Cancelar;Crédito;Visa;à Vista;1;188907;não;;;;Cavvucaf: AAkBBgEDQwAAAuHrmGF5dQAAAAA= / ECI: 07 / Program protocol: 2.2.0
+76;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Visa;à Vista;1;188907;não;;;;Cavvucaf: AAkBBgEDQwAAAuHrmGF5dQAAAAA= / ECI: 02 / Program protocol: 2.2.0 - Operação será negada
+77;Auto-Captura;Autorizar;Crédito;Elo;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 05 / Program protocol: 2.2.0
+78;Pré-Autorização;Autorizar/Capturar;Crédito;Elo;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 06 / Program protocol: 2.2.0
+79;Auto-Captura;Autorizar/Cancelar;Crédito;Elo;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 05 / Program protocol: 2.2.0
+80;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Elo;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 02 / Program protocol: 2.2.0 - Operação será negada
+81;Auto-Captura;Autorizar;Crédito;Amex;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 05 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0
+82;Pré-Autorização;Autorizar/Capturar;Crédito;Amex;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 06 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0
+83;Auto-Captura;Autorizar/Cancelar;Crédito;Amex;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 05 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0
+84;Pré-Autorização;Autorizar/Capturar/Cancelar;Crédito;Amex;à Vista;1;1000;não;;;;Cavvucaf: kBMUS1qH9NGLdwwafnLa35hh4T0u / ECI: 02 / Xid: kBMUS1qH9NGLdwwafnLa35hh4T0u / Program protocol: 2.2.0 - Operação será negada

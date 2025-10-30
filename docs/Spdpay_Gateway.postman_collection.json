@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "spdpay-gateway-2025",
+		"name": "Spdpay Gateway API",
+		"description": "Collection completa para testar o Spdpay Gateway - Integração com Adiq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-API-Key",
+				"type": "string"
+			}
+		]
+	},
+	"item": [
+		{
+			"name": "Invoices",
+			"item": [
+				{
+					"name": "Create Invoice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"merchant_id\": \"fb93c667-fbab-47ea-b3c7-9dd27231244a\",\n  \"customer_id\": \"3b415031-7236-425e-bc8f-35c7a5f572ab\",\n  \"amount\": 1000,\n  \"currency\": \"BRL\",\n  \"description\": \"Teste de pagamento\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/invoices",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8000",
+							"path": ["v1", "invoices"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Invoice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/invoices/:invoice_id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8000",
+							"path": ["v1", "invoices", ":invoice_id"],
+							"variable": [
+								{
+									"key": "invoice_id",
+									"value": "{{invoice_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/invoices?merchant_id={{merchant_id}}",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8000",
+							"path": ["v1", "invoices"],
+							"query": [
+								{
+									"key": "merchant_id",
+									"value": "{{merchant_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "Create Payment (with Token)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"payment_id\", jsonData.payment_id);",
+									"    pm.environment.set(\"transaction_id\", jsonData.transaction_id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"invoice_id\": \"{{invoice_id}}\",\n  \"card_token\": \"{{card_token}}\",\n  \"brand\": \"visa\",\n  \"cardholder_name\": \"JOSE DA SILVA\",\n  \"expiration_month\": \"12\",\n  \"expiration_year\": \"25\",\n  \"security_code\": \"123\",\n  \"installments\": 1,\n  \"capture_type\": \"ac\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/payments/",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8000",
+							"path": ["v1", "payments", ""]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Payment (with PAN)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"payment_id\", jsonData.payment_id);",
+									"    pm.environment.set(\"transaction_id\", jsonData.transaction_id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"invoice_id\": \"{{invoice_id}}\",\n  \"pan\": \"4761739001010036\",\n  \"brand\": \"visa\",\n  \"cardholder_name\": \"JOSE DA SILVA\",\n  \"expiration_month\": \"12\",\n  \"expiration_year\": \"25\",\n  \"security_code\": \"123\",\n  \"installments\": 1,\n  \"capture_type\": \"ac\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/payments/",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8000",
+							"path": ["v1", "payments", ""]
+						},
+						"description": "Gateway tokeniza o PAN automaticamente"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Payment (Parcelado)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"invoice_id\": \"{{invoice_id}}\",\n  \"pan\": \"4761739001010036\",\n  \"brand\": \"visa\",\n  \"cardholder_name\": \"JOSE DA SILVA\",\n  \"expiration_month\": \"12\",\n  \"expiration_year\": \"25\",\n  \"security_code\": \"123\",\n  \"installments\": 3,\n  \"capture_type\": \"ac\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/v1/payments/",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8000",
+							"path": ["v1", "payments", ""]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/v1/payments/:transaction_id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "8000",
+							"path": ["v1", "payments", ":transaction_id"],
+							"variable": [
+								{
+									"key": "transaction_id",
+									"value": "{{transaction_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/health",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8000",
+					"path": ["health"]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "merchant_id",
+			"value": "fb93c667-fbab-47ea-b3c7-9dd27231244a",
+			"type": "string"
+		},
+		{
+			"key": "customer_id",
+			"value": "3b415031-7236-425e-bc8f-35c7a5f572ab",
+			"type": "string"
+		}
+	]
+}
