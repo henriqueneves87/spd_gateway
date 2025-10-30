@@ -68,7 +68,7 @@ class WebhookService:
                 .execute()
             
             if existing.data:
-                logger.warning("duplicate_webhook", payment_id=payment_id)
+                logger.warning(f"duplicate_webhook - payment_id={payment_id}")
                 raise DuplicateWebhookError(payment_id)
         except DuplicateWebhookError:
             raise
@@ -90,12 +90,7 @@ class WebhookService:
                 .eq("id", webhook_id)\
                 .execute()
             
-            logger.info(
-                "webhook_processed",
-                webhook_id=webhook_id,
-                payment_id=payment_id,
-                event_type=event_type
-            )
+            logger.info(f"webhook_processed - webhook_id={webhook_id}, payment_id={payment_id}, event_type={event_type}")
             
             return WebhookResponse(
                 success=True,
@@ -106,12 +101,7 @@ class WebhookService:
         except Exception as e:
             # Log error
             error_msg = str(e)
-            logger.error(
-                "webhook_processing_failed",
-                webhook_id=webhook_id,
-                payment_id=payment_id,
-                error=error_msg
-            )
+            logger.error(f"webhook_processing_failed - webhook_id={webhook_id}, payment_id={payment_id}, error={error_msg}")
             
             supabase.table("webhook_logs")\
                 .update({"error": error_msg})\
