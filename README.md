@@ -1,6 +1,14 @@
 # 💳 Spdpay Gateway
 
+[![GitHub](https://img.shields.io/github/license/henriqueneves87/spd_gateway)](https://github.com/henriqueneves87/spd_gateway/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/henriqueneves87/spd_gateway)](https://github.com/henriqueneves87/spd_gateway/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues/henriqueneves87/spd_gateway)](https://github.com/henriqueneves87/spd_gateway/issues)
+[![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
+
 Gateway de pagamentos integrado com Adiq para processamento de transações de cartão de crédito.
+
+> 🚀 **Status:** Produção | ✅ Certificação Adiq em andamento
 
 ## 🚀 Quick Start
 
@@ -85,8 +93,8 @@ Acesse: http://localhost:8000/docs
 
 ```bash
 # 1. Clone o repositório
-git clone <repo-url>
-cd spdpay_gateway
+git clone https://github.com/henriqueneves87/spd_gateway.git
+cd spd_gateway
 
 # 2. Instale dependências
 pip install -r requirements.txt

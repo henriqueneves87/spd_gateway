@@ -1,0 +1,17 @@
+# Code Owners for Spdpay Gateway
+# These owners will be requested for review when someone opens a pull request.
+
+# Default owners for everything in the repo
+* @henriqueneves87
+
+# Specific owners for critical files
+/src/adapters/adiq.py @henriqueneves87
+/src/services/payment_service.py @henriqueneves87
+/src/core/security.py @henriqueneves87
+
+# Documentation
+/docs/ @henriqueneves87
+
+# Configuration files
+/.env.example @henriqueneves87
+/requirements.txt @henriqueneves87
